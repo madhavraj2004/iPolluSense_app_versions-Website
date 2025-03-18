@@ -7,29 +7,33 @@
 
 /* Body and Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Soft light background for better contrast */
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #343a40 !important;
+    background-color: #2c3e50; /* Dark blue background */
 }
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    color: #f39c12; /* Gold color for brand */
 }
 
 .navbar-nav .nav-link {
     font-weight: 500;
-    font-size: 1.1rem;
-    padding: 10px 15px;
+    font-size: 1.2rem;
+    padding: 12px 15px;
+    color: #ecf0f1; /* Light gray for text */
 }
 
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #ffd700;
+    color: #f39c12; /* Highlight active and hover links with gold */
 }
 
 /* Hero Section */
@@ -38,115 +42,130 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 #hero .display-4 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
 #hero .lead {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #hero .btn {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 15px 30px;
-    border-radius: 25px;
+    border-radius: 30px;
+    background-color: #f39c12; /* Bright gold for the button */
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #e67e22; /* Slightly darker gold on hover */
 }
 
 /* App Details Section */
 #app-details {
     padding: 60px 20px;
-    background-color: #f7f7f7;
+    background-color: #ffffff; /* White background for clarity */
     text-align: center;
 }
 
 #app-details h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    color: #444;
+    color: #34495e; /* Dark blue-gray for headings */
 }
 
 #app-details p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
-    color: #666;
+    color: #7f8c8d; /* Light gray text for paragraph */
 }
 
 #app-details img {
     width: 100%;
     max-width: 600px;
     margin-top: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 5px solid #ecf0f1; /* Soft border around images */
 }
 
 /* Version History Section */
 #version-history {
     padding: 60px 20px;
-    background-color: #ffffff;
+    background-color: #ecf0f1; /* Soft gray background */
 }
 
 #version-history h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #444;
+    color: #2c3e50; /* Dark blue for contrast */
 }
 
 #version-history .text-center p {
     font-size: 1.2rem;
     margin-bottom: 40px;
+    color: #7f8c8d; /* Light gray text */
 }
 
 .card {
     border: none;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    background-color: #ffffff; /* White background for cards */
 }
 
 .card-img-top {
-    border-radius: 10px 10px 0 0;
-    height: 200px;
+    border-radius: 15px 15px 0 0;
+    height: 250px;
     object-fit: cover;
 }
 
 .card-body {
     text-align: center;
+    padding: 20px;
 }
 
 .card-title {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #333;
+    color: #2c3e50; /* Dark blue */
 }
 
 .card-text {
     font-size: 1.1rem;
-    color: #666;
+    color: #7f8c8d; /* Light gray */
     margin-bottom: 20px;
 }
 
 .card .btn {
-    background-color: #343a40;
+    background-color: #2c3e50; /* Dark blue */
     color: white;
     padding: 12px 25px;
     font-size: 1rem;
-    border-radius: 25px;
-    transition: background-color 0.3s;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
 }
 
 .card .btn:hover {
-    background-color: #ffd700;
+    background-color: #16a085; /* Teal on hover */
 }
 
 /* Contact Section */
 #contact {
-    background-color: #343a40;
+    background-color: #2c3e50; /* Dark blue */
     color: white;
     padding: 60px 20px;
     text-align: center;
@@ -155,16 +174,17 @@ body {
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #ffd700;
+    color: #f39c12; /* Gold */
 }
 
 #contact p {
     font-size: 1.1rem;
     margin-bottom: 30px;
+    color: #ecf0f1; /* Light gray */
 }
 
 #contact a {
-    color: #ffd700;
+    color: #f39c12;
     font-weight: 500;
     text-decoration: none;
 }
@@ -175,20 +195,29 @@ body {
 
 /* Footer Styles */
 footer {
-    background-color: #343a40;
+    background-color: #34495e; /* Dark blue-gray */
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 1rem;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     #hero .display-4 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     #hero .lead {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+
+    #app-details h2 {
+        font-size: 2.3rem;
+    }
+
+    #app-details p {
+        font-size: 1rem;
     }
 
     .card-body {
@@ -196,18 +225,10 @@ footer {
     }
 
     .card-title {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .card-text {
-        font-size: 1rem;
-    }
-
-    #app-details h2 {
-        font-size: 2rem;
-    }
-
-    #app-details p {
         font-size: 1rem;
     }
 
@@ -222,15 +243,15 @@ footer {
     }
 
     #hero .display-4 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #hero .lead {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     #contact h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     #contact p {
@@ -238,7 +259,7 @@ footer {
     }
 
     .card-title {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .card-text {
