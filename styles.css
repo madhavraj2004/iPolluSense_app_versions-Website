@@ -1,38 +1,252 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.hero-section {
-    background-color: #343a40;
-    color: #fff;
-    padding: 80px 0;
+/* Body and Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffd700;
+}
+
+/* Hero Section */
+#hero {
+    background: url('images/ipollusense.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero .lead {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+/* App Details Section */
 #app-details {
-    background-color: #f8f9fa;
-    padding: 60px 0;
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
 }
 
+#app-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#app-details p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#app-details img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Version History Section */
 #version-history {
-    padding: 60px 0;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+#version-history h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#version-history .text-center p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
 }
 
 .card {
-    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
 }
 
+.card-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    background-color: #343a40;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #ffd700;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #343a40;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#contact a {
+    color: #ffd700;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
 footer {
     background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-footer a {
-    color: #fff;
-    text-decoration: none;
+/* Media Queries */
+@media (max-width: 768px) {
+    #hero .display-4 {
+        font-size: 2.5rem;
+    }
+
+    #hero .lead {
+        font-size: 1.2rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    #app-details h2 {
+        font-size: 2rem;
+    }
+
+    #app-details p {
+        font-size: 1rem;
+    }
+
+    #version-history .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    #hero .display-4 {
+        font-size: 2rem;
+    }
+
+    #hero .lead {
+        font-size: 1rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
